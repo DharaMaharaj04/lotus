@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lotus Temple</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .highlight {
+      color: #7d8389;
+      font-weight: bold;
+    }
+    .transition-colors {
+      font-weight: bold;
+    }
+    .bg {
+      background-color: #7d8389;
+    }
+    .txt:hover {
+      color: #7d8389;
+    }
+    .gy {
+      color: #7d8389;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-3xl font-bold gy">Lotus Temple</h1>
+      <button id="menu-toggle" class="md:hidden text-[#b48460] focus:outline-none text-2xl">
+        ☰
+      </button>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 text-sm font-semibold" aria-label="Primary navigation">
+        <a href="#overview" class="font-bold txt">Overview</a>
+        <a href="#design" class="font-bold txt">Design</a>
+        <a href="#engineering" class="font-bold txt">Engineering</a>
+        <a href="#philosophy" class="font-bold txt">Philosophy</a>
+      </nav>
+      <!-- Mobile Nav -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow text-sm font-semibold">
+        <a href="#overview" class="block font-bold txt">Overview</a>
+        <a href="#design" class="block font-bold txt">Design</a>
+        <a href="#engineering" class="block font-bold txt">Engineering</a>
+        <a href="#philosophy" class="block font-bold txt">Philosophy</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center text-white py-32 px-4" style="background-image: url('https://wallpapercave.com/wp/wp3776716.jpg');">
+    <div class="bg-opacity-75 p-6 rounded-lg">
+      <h2 class="text-3xl md:text-5xl pt-10 font-bold" data-aos="fade-down">Lotus Temple</h2>
+      <p class="text-xl mt-4" data-aos="fade-up">A Marvel of Architecture and Spiritual Harmony</p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section id="overview" class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="md:flex md:space-x-8" data-aos="fade-up">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">Basic Facts</h2>
+        <ul class="list-disc pl-5 space-y-2 text-lg">
+          <li><strong>Location:</strong> Bahapur, New Delhi</li>
+          <li><strong>Faith:</strong> Bahá'í House of Worship</li>
+          <li><strong>Completed:</strong> 1986</li>
+          <li><strong>Architect:</strong> Fariborz Sahba (Iranian)</li>
+          <li><strong>Built by:</strong> Larsen & Toubro</li>
+          <li><strong>Construction Time:</strong> ~6 years (1979–1986)</li>
+        </ul>
+      </div>
+      <div class="md:w-1/2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Lotus_Temple_at_Sunset.jpg/1024px-Lotus_Temple_at_Sunset.jpg" alt="Lotus Temple Sunset" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Section -->
+  <section id="design" class="py-16 bg-gray-100 px-6">
+    <div class="max-w-6xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 text-center">Design Inspired by the Lotus</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="flex justify-center">
+          <img class="rounded-xl shadow-lg border-4 border-indigo-300 w-full h-80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Lotus_Temple_inside.jpg/1024px-Lotus_Temple_inside.jpg" alt="Interior of Lotus Temple" />
+        </div>
+        <ul class="list-disc pl-5 space-y-2 text-lg">
+          <li><strong>Symbolism:</strong> Lotus symbolizes purity, peace, love, and immortality</li>
+          <li>27 marble petals form 9-sided structure</li>
+          <li><strong>Central Hall:</strong> 34.27 m high, 70 m diameter</li>
+          <li>Accommodates up to 2,500 people</li>
+          <li>No pulpits, idols, or pictures — symbol of unity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engineering Section -->
+  <section id="engineering" class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Structural Engineering Marvel</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <ul class="list-disc pl-5 space-y-2 text-lg">
+        <li>Material: White Pentelic marble (also used in the Parthenon)</li>
+        <li>Framework: Reinforced concrete covered in marble</li>
+        <li>Petals use ribbed shell structure for strength and elegance</li>
+        <li>No external lighting — reflects moonlight</li>
+        <li>Daytime illumination via natural light — energy-efficient</li>
+      </ul>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Lotus_Temple_inside_2.jpg/1024px-Lotus_Temple_inside_2.jpg" alt="Lotus Temple Engineering" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section id="philosophy" class="py-16 bg-gray-100 px-6">
+    <div class="max-w-6xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 text-center">Philosophical & Functional Principles</h2>
+      <div class="md:flex md:space-x-8">
+        <div class="md:w-1/2">
+          <ul class="list-disc pl-5 space-y-2 text-lg">
+            <li>Open to people of all faiths</li>
+            <li>No rituals, sermons, or sectarian symbols</li>
+            <li>Focus on unity, meditation, and harmony</li>
+            <li>Surrounded by 9 reflecting pools and lush gardens</li>
+          </ul>
+        </div>
+        <div class="md:w-1/2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Lotus_Temple_garden_view.jpg/1024px-Lotus_Temple_garden_view.jpg" alt="Lotus Temple Gardens" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg text-white py-6 text-center">
+    <p class="text-lg">A Sanctuary for Spiritual Unity | Bahá’í Faith</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggleButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
